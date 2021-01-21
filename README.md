@@ -11,6 +11,9 @@ python main.py
 ```python
 python client.py
 ```
+### Now Browse
+- [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+
 #### Use Built-in Webcam of Laptop
 ##### Put Zero (O) in cv2.VideoCapture(0)
 ```python
