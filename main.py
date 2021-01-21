@@ -6,8 +6,8 @@ app = Flask(__name__)
 def gen():
 
   while True:
-      s = streamer()
-      yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + s + b'\r\n\r\n')
+      stream = streamer()
+      yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + stream + b'\r\n\r\n')
 
 @app.route('/')
 def index():
